@@ -1,0 +1,130 @@
+<header>
+    <div class="container header-container">
+        <div class="logo">Afyanex <span>Medical Centre</span></div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <link rel="stylesheet" href="style.css">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Comprehensive Medical Services</h2>
+            <p class="section-description">At Afyanex Medical Centre, we provide a wide range of healthcare services delivered by experienced professionals using state-of-the-art technology.</p>
+        </div>
+        
+        <div class="services-container">
+            <!-- Service Cards -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3 class="service-title">General Outpatient Care</h3>
+                <p class="service-description">Comprehensive medical consultations for patients of all ages.</p>
+                <ul class="service-features">
+                    <li>Adult health check-ups</li>
+                    <li>Pediatric consultations</li>
+                    <li>Chronic disease management</li>
+                </ul>
+                <a href="appointment.html" class="learn-more">Book Appointment</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3 class="service-title">Diagnostic Laboratory</h3>
+                <p class="service-description">Accurate and timely diagnostic tests.</p>
+                <ul class="service-features">
+                    <li>Complete blood count</li>
+                    <li>Biochemistry tests</li>
+                    <li>Microbiology cultures</li>
+                </ul>
+                <a href="appointment.html" class="learn-more">Request Tests</a>
+            </div>
+            
+            <!-- Additional service cards... -->
+        </div>
+    </section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Afyanex</h3>
+                <p>Afyanex Medical Centre is committed to providing high-quality, patient-centered healthcare services with professionalism, integrity, and compassion.</p>
+                <p>Your Health, Our Concern.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+             <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="service.html">General Outpatient</a></li>
+                        <li><a href="service.html">Laboratory Services</a></li>
+                        <li><a href="service.html">Maternal Health</a></li>
+                        <li><a href="service.html">Child Health</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Muteremko, Bungoma Opp Slaughter House</p>
+                    <p><i class="fas fa-phone-alt"></i> 0759 887 759</p>
+                    <p><i class="fas fa-envelope"></i> afyanexmedicalcentre@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open 24/7 for emergencies</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Afyanex Medical Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('contactSubject').value;
+                
+                // Show confirmation
+                alert(`Thank you, ${name}! Your message about "${subject}" has been received. We will respond to you at ${email} shortly.`);
+                
+                // Reset form
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
